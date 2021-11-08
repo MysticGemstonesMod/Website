@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+
     /* Font */
     font-family: Helvetica;
 }
@@ -66,3 +66,17 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; color: gray;}
 
 a:active { text-decoration: none; }
+
+
+.titleWithIcon {
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleWithIcon1 {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
