@@ -80,3 +80,25 @@ a:active { text-decoration: none; }
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+/* Slideshow */
+
+.slideShow {
+    overflow: hidden;
+    width: 75%;
+    text-align: left;
+}
+
+.slideShowImgContainer {
+    width: 3600px;
+}
+
+.imageInSliedShow {
+        height: 300px;
+}
+
+.allSlideShow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
