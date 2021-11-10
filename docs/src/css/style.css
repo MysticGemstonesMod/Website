@@ -1,0 +1,95 @@
+body,
+section,
+div{
+    box-sizing : border-box;
+}
+
+/* Body */
+body {
+    /* Background Image */
+    background-image: url("../image/background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Font */
+    font-family: Helvetica;
+}
+
+/* Everything in body */
+.AllStuff {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Everything except header and footer */
+.bodyMain {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* Header */
+header {
+    color: whitesmoke;
+    padding: 20px;
+}
+
+
+
+.headerLinks {
+    text-align: left;
+    width: 48%;
+    float: left;
+}
+
+.headerLink {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.headerDownload {
+    text-align: right;
+    width: 48%;
+    float: left;
+}
+
+
+a {
+    color: whitesmoke;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; color: gray;}
+
+a:active { text-decoration: none; }
+
+
+.titleWithIcon {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleWithIcon1 {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Slider */
+.hero_slider_holder{
+    width : 100%;
+    height : 500px;
+    display : block;
+}
