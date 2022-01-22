@@ -1,93 +1,99 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
         <meta charset="utf-8">
         <title>Mystic Gemstones</title>
         <link rel="icon" href="src/image/iconTransparent.png">
-
-
-        <!-- Link -->
         <link rel="stylesheet" href="src/css/normalize.css">
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="src/slick/slick.css">
     </head>
 
     <body>
-      <p style="background-color:yellow;"><b>Website in development... Current state of this website Very Very bad and unresponsive...</b></p>
-        <div class="AllStuff">
-            <header>
-                <div>
-                <div class="headerLinks">
-                    <a href="index.html" class="headerLink" class="jovanko"><b>MysticGemstones</b></a>
-                    <a href="wiki.html" class="headerLink">Wiki</a>
-                    <a href="faq.html" class="headerLink">About</a>
-                    <a href="faq.html" class="headerLink">News</a>
-                    <a href="https://github.com/MysticGemstonesMod" class="headerLink">GitHub</a>
-                </div>
-                <div class="headerDownload">
-                    <a href="downloads.html" class="headerLink"><b>Download</b></a>
-                </div>
-                </div>
-            </header>
-
-            <div class="bodyMain">
-                <div class="titleWithIcon">
-                  <img src="src/image/iconTransparent.png" class="titleWithIcon1" height="64px">
-                  <p style="font-size: 40px" class="titleWithIcon1">Mystic Gemstones</p>
-                </div>
-                <p class="modDescription">Very cool Minecraft mod.</p>
-
-                <!-- Slider -->
-                <div class="centerHeroSlider">
-                  <div class="hero_slider_holder">
-                    <div class="hero_slider">>
-                        <img src="src/image/Scr1.png">
-                        <img src="src/image/Scr2.png">
-                        <img src="src/image/Scr3.png">
-                        <img src="src/image/Scr4.png">
-                        <img src="src/image/Scr5.png">
-                        <img src="src/image/Scr6.png">
-                        <img src="src/image/Scr7.png">
-                        <img src="src/image/Scr8.png">
-                    </div>
-                  </div>
-                </div>
-<!--            Download and GitHub buttons
-                <div class="BigButtons">
-                  <button class="DownloadButton">Download</button>
-                  <button class="GithubButton">Github</button>
-                </div>
--->
-
-              <div class="About">
-                <div style="width:50%;">
-                  <div style="width:80%">
-                    <h1 style="padding-top:100px;">About</h1>
-                    <p style="text-align:left;">
-                      This is our first minecraft mod and it is currently in development.<br>
-                      In the future We'll be adding a lot of new ores, tools etc.<br>
-                      The mod is currently in alpha phase so it doesn't add much, hopefully there'll eventually be many new items with interesting magical powers.<br>
-                      <br>
-                      <b>Credits:</b><br>
-                      Mod: Domza, Jeryux<br>
-                      Web: Domza, Dekovicc</p>
-                  </div>
-                </div>
-                <div style="width:50%;">
-                  <img src="src/image/iconTransparent1024.png" width="80%">
-                </div>
-              </div>
-            </div> <!-- From bodyMain -->
-            <footer>
-                <p>MysticGemstones Mod</p>
-            </footer>
+      <p style="background-color:yellow; color: black; padding: 6px; text-align: center; margin-top: 60px;"><b>[!] Website in development [!]</b></p>
+      <section class="navBar">
+        <div class="navBarContainer">
+          <div class="navBarLeft">
+            <a href="#mainPage"><b>MysticGemstones</b></a>
+            <a href="#AboutPage">About</a>
+            <a href="#NewsPage">News</a>
+            <a href="#FAQs">FAQs</a>
+            <a href="wiki.html">Wiki</a>
+            <a href="https://github.com/MysticGemstonesMod">GitHub</a>
+          </div>
+          <div class="navBarRight">
+            <a href="downloads.html"><b>Download</b></a>
+          </div>
         </div>
+      </section>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="src/slick/slick.js"></script>
-        <script type="text/javascript" src="src/js/slider.js"></script>
+      <div class="pageContainer">
+        <section class="mainPage" id="mainPage">
+          <div class="title">
+            <div>
+              <img src="src/image/iconTransparent.png" height="64px" style="margin-right: 20px;">
+            </div>
+            <div>
+              <p style="font-size: 40px;"><b>Mystic Gemstones</b></p>
+              <p class="modDescription" style="padding-left: 30px;">Very cool Minecraft mod.</p>
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="centerHeroSlider">
+            <div class="hero_slider_holder">
+              <div class="hero_slider">>
+                <img src="src/image/Scr1.png">
+                <img src="src/image/Scr2.png">
+                <img src="src/image/Scr3.png">
+                <img src="src/image/Scr4.png">
+                <img src="src/image/Scr5.png">
+                <img src="src/image/Scr6.png">
+                <img src="src/image/Scr7.png">
+                <img src="src/image/Scr8.png">
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="aboutPage" id="AboutPage">
+          <div style="margin-right: 15%;">
+            <h1>About</h1>
+            <p>
+              This is our first minecraft mod and it is currently in development.<br>
+              In the future We'll be adding a lot of new ores, tools etc.<br>
+              The mod is currently in alpha phase so it doesn't add much, hopefully there'll eventually be many new items with interesting magical powers.<br>
+              <br>
+              <b>Credits:</b><br>
+              Mod: Domza, Jeryux<br>
+              Web: Domza, Dekovicc
+            </p>
+          </div>
+          <img src="src/image/iconTransparent.png" width="60%">
+        </section>
+
+        <section class="newsPage" id="NewsPage">
+          <div style="margin-right:15%;">
+            <h1>News</h1>
+            <p>No development updates yet...</p>
+            <a href="news.html" style="border: 2px solid whitesmoke;">Read more</a>
+          </div>
+          <img src="src/image/alexandrite_ore.png" width="20%">
+        </section>
+
+        <section class="faqsPage" id="FAQs">
+          <div style="margin-right:15%;">
+            <h1>FAQs</h1>
+            <p>No FAQs yet...</p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+          <p>MysticGemstones Mod</p>
+      </footer>
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="src/slick/slick.js"></script>
+      <script type="text/javascript" src="src/js/slider.js"></script>
     </body>
 </html>

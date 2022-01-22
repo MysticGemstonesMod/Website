@@ -1,10 +1,7 @@
-body,
-section,
-div{
-    box-sizing : border-box;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Body */
 body {
     /* Background Image */
     background-image: url("../image/background.svg");
@@ -14,139 +11,109 @@ body {
 
     /* Font */
     font-family: Helvetica;
-}
-
-/* Everything in body */
-.AllStuff {
-    padding-left: 18%;
-    padding-right: 18%;
-}
-
-/* Everything except header and footer */
-.bodyMain {
     color: whitesmoke;
-    text-align: center;
 }
 
-/* Footer */
-footer {
-    color: whitesmoke;
-    text-align: center;
-    padding-bottom: 25px;
+img {
+  image-rendering: pixelated;
 }
 
-/* Header */
-header {
-    color: whitesmoke;
-    padding: 20px;
+h1 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/* links */
+a {
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; color: gray;}
+a:active { text-decoration: none; }
 
-.modDescription {
-  margin-top: 0px;
-  margin-bottom: 69px;
+.pageContainer {
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
-.headerLinks {
+/* Navbar */
+.navBar {
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  background-color: #0a0925;
+  width: 100%
+}
+.navBarContainer {
+  width: 60%;
+}
+.navBarLeft {
     text-align: left;
     width: 50%;
     float: left;
 }
-
-.headerLink {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.headerDownload {
+.navBarRight {
     text-align: right;
     width: 50%;
     float: left;
 }
 
-a {
-    color: whitesmoke;
+
+/* Main Page */
+.mainPage {
+  height: 100vh;
 }
-
-a:link { text-decoration: none; }
-
-a:visited { text-decoration: none; }
-
-a:hover { text-decoration: none; color: gray;}
-
-a:active { text-decoration: none; }
-
-
-.titleWithIcon {
-    padding-top: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.title {
+  text-align: left;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  margin-bottom: 90px;
 }
-.titleWithIcon1 {
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* Slider */
 .hero_slider_holder{
-    width : 80%;
-    height : 500px;
-    display : block;
+  width : 80%;
+  height : 500px;
+  display : block;
 }
-
 .centerHeroSlider {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-/* Big buttons
-.BigButtons {
-  padding-top: 32px;
-  padding-bottom: 1000px;
+
+/* About Page */
+.aboutPage {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
 }
-.DownloadButton {
-  font-size: 20px;
-  color: whitesmoke;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-left:100px;
-  padding-right:100px;
-  background-color: #170082;
-  border: 0;
-  border-radius: 5px;
-  margin-right: 12%;
-}
-.DownloadButton:hover {
-  background-color: #11005e;
-}
-.GithubButton {
-  font-size: 20px;
-  color: whitesmoke;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-left:100px;
-  padding-right:100px;
-  background-color: #444444;
-  border: 0;
-  border-radius: 5px;
-  margin-left: 12%;
-}
-.GithubButton:hover {
-  background-color: #333333;
-}
-*/
 
-.About {
-  padding-top: 32px;
-  padding-bottom: 1000px;
+
+/* News Page */
+.newsPage {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 400px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 150px;
+  text-align: center;
+  padding-bottom: 25px;
 }
