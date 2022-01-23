@@ -50,6 +50,7 @@ a:active { text-decoration: none; }
 }
 
 .pageContainer {
+  margin-top: 4em;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -67,18 +68,21 @@ a:active { text-decoration: none; }
 .navBarContainer {
   padding: 20px;
   justify-content: space-between;
+  display: flex;
   align-items: center;
   width: 70%;
 }
 .navBarLeft {
     text-align: left;
-    width: 50%;
     float: left;
+    display: flex;
+    align-items: center;
 }
 .navBarRight {
     text-align: right;
-    width: 50%;
-    float: left;
+    float: right;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -141,31 +145,24 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 1000px) {
-  .icon {
-    display: block;
-    height: 12em;
+@media only screen and (min-width: 700px) {
+  .navBar {
+    display: flex;
   }
-  .icon2 {
-    display: block;
-    height: 6em;
+  .navBarContainer {
+    justify-content: space-between;
+    width: 1500px;
   }
   .pageContainer {
-    padding-left: 18%;
-    padding-right: 18%;
-  }
-  .aboutPageText {
-    margin-right: 15%;
-    width: 60%;
+    margin-top: 0em;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   .aboutPage {
     margin-bottom: 300px;
   }
-  .hero_slider_holder {
-    max-width: 1080px;
-  }
   .mainPage {
-    height: 100vh;
+    height: 70vh;
   }
   .aboutPage {
     padding-top: 200px;
@@ -178,9 +175,6 @@ footer {
   footer {
     margin-top: 350px;
   }
-  .navBar {
-    display: flex;
-  }
   .inDevelopment {
     display: block;
   }
@@ -189,8 +183,24 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1300px) {
-  .navBarContainer {
-    width: 1300px;
+@media only screen and (min-width: 1000px) {
+  .icon {
+    display: block;
+    height: 12em;
+  }
+  .icon2 {
+    display: block;
+    height: 6em;
+  }
+  .aboutPageText {
+    margin-right: 15%;
+    width: 60%;
+  }
+  .mainPage {
+    height: 100vh;
+  }
+  .pageContainer {
+    padding-left: 18%;
+    padding-right: 18%;
   }
 }
