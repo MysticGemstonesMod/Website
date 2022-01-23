@@ -39,6 +39,7 @@ a:hover { text-decoration: none; color: gray;}
 a:active { text-decoration: none; }
 
 .inDevelopment {
+  display: none;
   background-color:yellow;
   color: black;
   padding: 6px;
@@ -55,18 +56,19 @@ a:active { text-decoration: none; }
 
 /* Navbar */
 .navBar {
-  padding: 20px;
-  position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
-  align-items: center;
-  top: 0px;
   background-color: #0a0925;
-  width: 100%;
   z-index: 998;
+  top: 0px;
+  position: fixed;
+  width: 100%;
 }
 .navBarContainer {
-  width: 60%;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
 }
 .navBarLeft {
     text-align: left;
@@ -82,7 +84,7 @@ a:active { text-decoration: none; }
 
 /* Main Page */
 .mainPage {
-  height: 800px;
+  height: 640px;
 }
 
 .title {
@@ -91,7 +93,7 @@ a:active { text-decoration: none; }
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 50px;
   margin-bottom: 90px;
 }
 .hero_slider_holder{
@@ -110,8 +112,8 @@ a:active { text-decoration: none; }
 .aboutPage {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
+  margin-top: -5em;
 }
 
 
@@ -119,15 +121,13 @@ a:active { text-decoration: none; }
 .newsPage {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 400px;
-  padding-top: 150px;
+  margin-bottom: 250px;
 }
 
 
 /* Footer */
 footer {
-  margin-top: 350px;
+  margin-top: 250px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -141,7 +141,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .icon {
     display: block;
     height: 12em;
@@ -158,6 +158,9 @@ footer {
     margin-right: 15%;
     width: 60%;
   }
+  .aboutPage {
+    margin-bottom: 300px;
+  }
   .hero_slider_holder {
     max-width: 1080px;
   }
@@ -165,6 +168,29 @@ footer {
     height: 100vh;
   }
   .aboutPage {
-    padding-top: 100px;
+    padding-top: 200px;
+    margin-bottom: 500px;
+    margin-top: 0em;
+  }
+  .newsPage {
+    margin-bottom: 500px;
+  }
+  footer {
+    margin-top: 350px;
+  }
+  .navBar {
+    display: flex;
+  }
+  .inDevelopment {
+    display: block;
+  }
+  .title {
+    padding-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .navBarContainer {
+    width: 1300px;
   }
 }
