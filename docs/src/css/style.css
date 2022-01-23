@@ -49,8 +49,8 @@ a:active { text-decoration: none; }
 }
 
 .pageContainer {
-  padding-left: 18%;
-  padding-right: 18%;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 /* Navbar */
@@ -82,8 +82,9 @@ a:active { text-decoration: none; }
 
 /* Main Page */
 .mainPage {
-  height: 100vh;
+  height: 800px;
 }
+
 .title {
   text-align: left;
   display: flex;
@@ -94,7 +95,7 @@ a:active { text-decoration: none; }
   margin-bottom: 90px;
 }
 .hero_slider_holder{
-  width : 80%;
+  width : 100%;
   height : 500px;
   display : block;
 }
@@ -105,11 +106,11 @@ a:active { text-decoration: none; }
   justify-content: center;
 }
 
-
 /* About Page */
 .aboutPage {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 300px;
 }
 
@@ -118,7 +119,9 @@ a:active { text-decoration: none; }
 .newsPage {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 400px;
+  padding-top: 150px;
 }
 
 
@@ -127,4 +130,41 @@ footer {
   margin-top: 350px;
   text-align: center;
   padding-bottom: 50px;
+}
+
+/* Responsive CSS test */
+
+.icon {
+  display: none;
+}
+.icon2 {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .icon {
+    display: block;
+    height: 12em;
+  }
+  .icon2 {
+    display: block;
+    height: 6em;
+  }
+  .pageContainer {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  .aboutPageText {
+    margin-right: 15%;
+    width: 60%;
+  }
+  .hero_slider_holder {
+    max-width: 1080px;
+  }
+  .mainPage {
+    height: 100vh;
+  }
+  .aboutPage {
+    padding-top: 100px;
+  }
 }
