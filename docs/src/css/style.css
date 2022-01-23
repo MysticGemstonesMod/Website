@@ -141,7 +141,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   .icon {
     display: block;
     height: 12em;
