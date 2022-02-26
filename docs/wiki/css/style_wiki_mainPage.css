@@ -1,0 +1,59 @@
+/* ---Main--------------------------- */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border-bottom: 2px solid lightgray;
+  height: 6vh;
+}
+.main li {
+  text-decoration: none;
+}
+input {
+  display: none;
+}
+
+.wikiSection {
+  padding: 20px 10px 0px 10px;
+}
+.underline {
+  border-bottom: 2px solid lightgray;
+}
+.wikiSection a {
+  color: #902FD3;
+  text-decoration: none;
+}
+.wikiSection a:hover {
+  color: #431463;
+  text-decoration: underline;
+}
+.wikiSectionText {
+  margin-left: 15px;
+}
+.sectionTitle {
+  font-size: 30px;
+  margin-top: 69px;
+}
+/* ---------------------------------- */
+
+
+
+/* ---For mobile responsive---------- */
+@media only screen and (min-width: 700px) {
+  .search_icon {
+    display: none;
+  }
+  input {
+    display: block;
+  }
+  .wikiSectionContent {
+    display: flex;
+  }
+  .wikiSectionText {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+}
+/* ---------------------------------- */

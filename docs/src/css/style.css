@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    /* Background Image */
-    background-image: url("../image/background.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../image/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    /* background-image: linear-gradient(rgba(19, 12, 53), rgba(12, 27, 53), rgba(19, 12, 53)); */
 
     /* Font */
     font-family: Helvetica;
@@ -59,14 +59,14 @@ a:active { text-decoration: none; }
 .navBar {
   display: none;
   justify-content: center;
-  background-color: #0a0925;
+  background-image: linear-gradient(rgba(19, 12, 53, 1), rgba(19, 12, 53, 1), rgba(19, 12, 53, 1), rgba(19, 12, 53, 0));
   z-index: 998;
   top: 0px;
   position: fixed;
   width: 100%;
 }
 .navBarContainer {
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -166,10 +166,11 @@ footer {
   }
   .aboutPage {
     padding-top: 200px;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
     margin-top: 0em;
   }
   .newsPage {
+    padding-top: 200px;
     margin-bottom: 500px;
   }
   footer {

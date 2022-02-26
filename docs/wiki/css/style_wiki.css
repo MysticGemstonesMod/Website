@@ -1,0 +1,98 @@
+body {
+  font-family: Helvetica;
+  background-color: #f6f9fc
+}
+p { margin: 5px 0px; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+img {
+  image-rendering: pixelated;
+}
+/* ---------------------------------- */
+
+
+
+/* ---Navbar------------------------- */
+.navBar {
+  display: none;
+  justify-content: center;
+  background-color: #130c35;
+  z-index: 998;
+  top: 0px;
+  width: 100%;
+}
+.navBarContainer {
+  padding: 20px;
+  justify-content:
+  space-between;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.navBarLeft {
+    text-align: left;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.navBarRight {
+    text-align: right;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.navBar a {
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+.navBar a:hover { color: gray; }
+/* ---------------------------------- */
+
+
+
+/* ---Main--------------------------- */
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.main {
+  background-color: white;
+  max-width: 1100px;
+  width: 80%;
+  padding: 10px 25px;
+  border: 2px solid lightgray;
+}
+/* ---------------------------------- */
+
+
+/* ---Footer------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+}
+/* ---------------------------------- */
+
+
+
+/* ---For mobile responsive---------- */
+@media only screen and (min-width: 700px) {
+  .navBar {
+    display: flex;
+  }
+  .navBarContainer {
+    justify-content: space-between;
+    width: 1500px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    width: 60%;
+  }
+}
+/* ---------------------------------- */
