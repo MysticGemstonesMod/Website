@@ -9,25 +9,47 @@
       <link rel="stylesheet" href="css/style_wiki.css">
       <link rel="stylesheet" href="css/style_wiki_mainPage.css">
       <link rel="stylesheet" href="../src/css/normalize.css">
+      <link rel="stylesheet" href="../src/css/hamburger.css">
   </head>
 
   <body>
 
-    <header class="navBar">
+    <nav class="navBar">
       <div class="navBarContainer">
         <div class="navBarLeft">
-          <a href="index.html" style="display: flex; align-items: center;"><img src="../src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a>
-          <a href="index.html#AboutPage">About</a>
-          <a href="index.html#NewsPage">News</a>
-          <a href="index.html#FAQs">FAQs</a>
-          <a href="#">Wiki</a>
+          <a href="../index.html#mainPage" style="display: flex; align-items: center;"><img src="../src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a>
+          <a href="../index.html#AboutPage">About</a>
+          <a href="../index.html#NewsPage">News</a>
+          <a href="../index.html#FAQs">FAQs</a>
+          <a href="wiki.html">Wiki</a>
           <a href="https://github.com/MysticGemstonesMod">GitHub</a>
         </div>
         <div class="navBarRight">
-          <a href="downloads.html"><b>Download</b></a>
+          <a href="../downloads.html" class="DownloadButton"><b>Download</b></a>
+          <div class="hamburgerMenu">
+            <div class="burgerContainer">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <div class="menu-items">
+                <ul>
+                  <li><a href="../index.html" style="display: flex; align-items: center;"><img src="../src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a></li>
+                  <li><a href="../index.html#AboutPage">About</a></li>
+                  <li><a href="../index.html#NewsPage">News</a></li>
+                  <li><a href="../index.html#FAQs">FAQs</a></li>
+                  <li><a href="wiki.html">Wiki</a></li>
+                  <li><a href="https://github.com/MysticGemstonesMod">GitHub</a></li>
+                  <li style="margin-top: 24px"><a href="../downloads.html"><b>Download</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </nav>
 
     <div class="pageContainer">
       <div class="main">

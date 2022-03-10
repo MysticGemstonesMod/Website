@@ -27,6 +27,9 @@ p {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
 
 /* links */
 a {
@@ -69,7 +72,7 @@ a:active { text-decoration: none; }
   padding-right: 3em;
 }
 
-/* Navbar Desktop */
+/* Navbar */
 .navBar {
   height: 70px;
   justify-content: center;
@@ -91,13 +94,14 @@ a:active { text-decoration: none; }
   display: flex;
   align-items: center;
 }
-.navBarContainer a {
+.navBarLeft a {
     display: none;
-    padding: 4px;
+    padding: 8px;
 }
-.hamburgerMenuImg:hover {
-  background-color: gray;
+.DownloadButton {
+  display: none;
 }
+
 .navBarRight {
   text-align: right;
   float: right;
@@ -123,6 +127,13 @@ a:active { text-decoration: none; }
   left: 10%;
 }
 
+.title h1 {
+  font-size: 2.5em;
+}
+.title p {
+  font-size: 1.2em;
+  padding-left: 30px;
+}
 
 /* About Page */
 .aboutPage {
@@ -161,7 +172,7 @@ footer {
   .navBar {
     display: flex;
   }
-  .hamburgerMenuImg {
+  .hamburgerMenu {
     display: none;
   }
   .navBarContainer a {
@@ -183,6 +194,12 @@ footer {
   .title {
     padding-top: 150px;
     left: 10%;
+  }
+  .title h1 {
+    font-size: 4em;
+  }
+  .title p {
+    font-size: 1.5em;
   }
   .aboutPage {
     margin-bottom: 300px;

@@ -8,46 +8,63 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 img {
   image-rendering: pixelated;
 }
+a {
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; color: gray;}
+a:active { text-decoration: none; }
+
+li {
+  list-style: none;
+}
 /* ---------------------------------- */
 
 
 
 /* ---Navbar------------------------- */
 .navBar {
-  display: none;
+  height: 70px;
+  display: flex;
   justify-content: center;
-  background-color: #130c35;
-  z-index: 998;
-  top: 0px;
+  background: #130c35;
   width: 100%;
+  z-index: 999;
 }
 .navBarContainer {
-  padding: 20px;
-  justify-content:
-  space-between;
+  padding: 1em;
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
 }
 .navBarLeft {
-    text-align: left;
-    float: left;
-    display: flex;
-    align-items: center;
+  text-align: left;
+  float: left;
+  display: flex;
+  align-items: center;
 }
+.navBarLeft a {
+    display: none;
+    padding: 8px;
+}
+.DownloadButton {
+  display: none;
+}
+
 .navBarRight {
-    text-align: right;
-    float: right;
-    display: flex;
-    align-items: center;
+  text-align: right;
+  float: right;
+  display: flex;
+  align-items: center;
 }
-.navBar a {
-  color: whitesmoke;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
+.menu-items {
+    background-color: rgba(0, 0, 0, .7);
 }
-.navBar a:hover { color: gray; }
+
 /* ---------------------------------- */
 
 
@@ -88,11 +105,26 @@ footer {
   .navBarContainer {
     justify-content: space-between;
     width: 1500px;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+  .navBarContainer a {
+    display: block;
+  }
+  .navBarContainer {
+    justify-content:
+    space-between;
+    width: 1500px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .main {
     width: 60%;
+  }
+  .navBarContainer {
+    width: 70%;
   }
 }
 /* ---------------------------------- */

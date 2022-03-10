@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="src/css/normalize.css">
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="src/slick/slick.css">
+        <link rel="stylesheet" href="src/css/hamburger.css">
     </head>
 
     <body>
@@ -16,22 +17,42 @@
         <p><b>[!]<br>Website in development</b></p>
       </div>
 
-      <section class="navBar">
+      <nav class="navBar">
         <div class="navBarContainer">
-          <section class="navBarLeft">
+          <div class="navBarLeft">
             <a href="#mainPage" style="display: flex; align-items: center;"><img src="src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a>
             <a href="#AboutPage">About</a>
             <a href="#NewsPage">News</a>
             <a href="#FAQs">FAQs</a>
             <a href="wiki/wiki.html">Wiki</a>
             <a href="https://github.com/MysticGemstonesMod">GitHub</a>
-          </section>
+          </div>
           <div class="navBarRight">
-            <a href="downloads.html"><b>Download</b></a>
-            <img src="src/image/hamburger.svg" alt="Hamburger Menu" class="hamburgerMenuImg">
+            <a href="downloads.html" class="DownloadButton"><b>Download</b></a>
+            <div class="hamburgerMenu">
+              <div class="burgerContainer">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                  <ul>
+                    <li><a href="#mainPage" style="display: flex; align-items: center;"><img src="src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a></li>
+                    <li><a href="#AboutPage">About</a></li>
+                    <li><a href="#NewsPage">News</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="wiki/wiki.html">Wiki</a></li>
+                    <li><a href="https://github.com/MysticGemstonesMod">GitHub</a></li>
+                    <li style="margin-top: 24px"><a href="downloads.html"><b>Download</b></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </nav>
 
       <div class="hreo_container" id="mainPage">
         <div class="title">
@@ -39,8 +60,8 @@
             <img class="icon2" src="src/image/iconTransparent.png" style="margin-right: 20px;">
           </div>
           <div>
-            <p style="font-size: 4em;"><b>Mystic Gemstones</b></p>
-            <p style="font-size: 1.5em; padding-left: 30px;">Very cool Minecraft mod.</p>
+            <h1><b>Mystic Gemstones</b></h1>
+            <p>Very cool Minecraft mod.</p>
           </div>
         </div>
       </div>
