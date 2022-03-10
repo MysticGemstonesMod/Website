@@ -3,10 +3,11 @@ html {
 }
 
 body {
-  background-image: url("../image/background.svg");
+   /* background-image: url("../image/background.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #0d0335;
     /* background-image: linear-gradient(rgba(19, 12, 53), rgba(12, 27, 53), rgba(19, 12, 53)); */
 
     /* Font */
@@ -38,16 +39,29 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; color: gray;}
 a:active { text-decoration: none; }
 
+
+/* In development window */
 .inDevelopment {
-  display: none;
-  background-color:yellow;
   color: black;
   padding: 6px;
   text-align: center;
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  bottom: 0px;
   z-index: 999;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  animation-name: flash;
 }
+
+@keyframes flash {
+   0%, 50% {
+      background-color: red;
+  }
+   51%, 100% {
+      background-color: yellow;
+   }
+}
+
 
 .pageContainer {
   margin-top: 4em;
@@ -55,71 +69,69 @@ a:active { text-decoration: none; }
   padding-right: 3em;
 }
 
-/* Navbar */
+/* Navbar Desktop */
 .navBar {
-  display: none;
+  height: 70px;
   justify-content: center;
-  background-image: linear-gradient(rgba(19, 12, 53, 1), rgba(19, 12, 53, 1), rgba(19, 12, 53, 1), rgba(19, 12, 53, 0));
-  z-index: 998;
-  top: 0px;
+  background: rgba(0,0,0,0);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 .navBarContainer {
-  padding: 20px 20px 50px 20px;
+  padding: 1em;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
 }
 .navBarLeft {
-    text-align: left;
-    float: left;
-    display: flex;
-    align-items: center;
+  text-align: left;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.navBarContainer a {
+    display: none;
+    padding: 4px;
+}
+.hamburgerMenuImg:hover {
+  background-color: gray;
 }
 .navBarRight {
-    text-align: right;
-    float: right;
-    display: flex;
-    align-items: center;
+  text-align: right;
+  float: right;
+  display: flex;
+  align-items: center;
 }
 
 
 /* Main Page */
-.mainPage {
-  height: 640px;
+.hreo_container {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../image/Scr3.png");
+  background-size: cover;
 }
-
 .title {
   text-align: left;
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  margin-bottom: 90px;
+  position: absolute;
+  bottom: 45%;
+  left: 10%;
 }
-.hero_slider_holder{
-  width : 100%;
-  height : 500px;
-  display : block;
-}
-.centerHeroSlider {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* About Page */
 .aboutPage {
   display: flex;
   align-items: center;
+  padding-top: 200px;
   margin-bottom: 250px;
   margin-top: -5em;
 }
-
 
 /* News Page */
 .newsPage {
@@ -136,8 +148,8 @@ footer {
   padding-bottom: 50px;
 }
 
-/* Responsive CSS test */
 
+/* Responsive CSS test */
 .icon {
   display: none;
 }
@@ -145,12 +157,19 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .navBar {
     display: flex;
   }
+  .hamburgerMenuImg {
+    display: none;
+  }
+  .navBarContainer a {
+    display: block;
+  }
   .navBarContainer {
-    justify-content: space-between;
+    justify-content:
+    space-between;
     width: 1500px;
   }
   .pageContainer {
@@ -158,14 +177,14 @@ footer {
     padding-left: 8%;
     padding-right: 8%;
   }
-  .aboutPage {
-    margin-bottom: 300px;
+  .inDevelopment {
+    display: block;
   }
-  .mainPage {
-    height: 70vh;
+  .title {
+    padding-top: 150px;
+    left: 10%;
   }
   .aboutPage {
-    padding-top: 200px;
     margin-bottom: 300px;
     margin-top: 0em;
   }
@@ -175,12 +194,6 @@ footer {
   }
   footer {
     margin-top: 350px;
-  }
-  .inDevelopment {
-    display: block;
-  }
-  .title {
-    padding-top: 150px;
   }
 }
 
@@ -197,11 +210,14 @@ footer {
     margin-right: 15%;
     width: 60%;
   }
-  .mainPage {
-    height: 100vh;
+  .navBarContainer {
+    width: 70%;
   }
   .pageContainer {
     padding-left: 18%;
     padding-right: 18%;
+  }
+  .title {
+    left: 20%;
   }
 }
