@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="src/slick/slick.css">
         <link rel="stylesheet" href="src/css/hamburger.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="src/js/fadeEffect.js"></script>
+        <script src="src/js/reveal.js"></script>
     </head>
 
     <body>
@@ -56,21 +59,21 @@
 
       <div class="hero_container" id="mainPage">
         <div class="title">
-          <div>
+          <div class="scrollFade">
             <img class="icon2" src="src/image/iconTransparent.png" style="margin-right: 20px;">
           </div>
-          <div>
+          <div class="scrollFade">
             <h1><b>Mystic Gemstones</b></h1>
             <p>"This is supposed to be an inspiring quote..."</p>
           </div>
         </div>
+        <div class="hero_container_transition"></div>
       </div>
-
 
       <div class="pageContainer">
 
-        <section class="aboutPage" id="AboutPage">
-          <div class="aboutPageText">
+        <section class="aboutPage fade-bottom reveal" id="AboutPage">
+          <div class="aboutPageText scrollFade">
             <h1 style="margin-bottom: 1em;">About</h1>
             <p>
               This is our first minecraft mod and it is currently in development.<br>
@@ -78,28 +81,28 @@
               The mod is currently in alpha phase so it doesn't add much, hopefully there'll eventually be many new items with interesting magical powers.<br>
             </p>
           </div>
-          <div class="icon" style="height:15em;">
+          <div class="icon scrollFade" style="height:15em;">
             <img src="src/image/iconTransparent.png" height="100%">
           </div>
         </section>
 
-        <section class="newsPage" id="NewsPage">
-          <div class="newsText">
+        <section class="newsPage fade-bottom reveal" id="NewsPage">
+          <div class="newsText scrollFade">
             <h1 style="margin-bottom: 1em;">News</h1>
             <p>No development updates yet... This video here is supposed to be dev log video new update review showcase something but currently there is no souch video so it is this random video</p>
             <a href="news.html" style="border: 2px solid whitesmoke;">Read more</a>
           </div>
-          <div class="video-mobile">
+          <div class="video-mobile scrollFade">
             <div class="video-container">
               <iframe width="1908" height="794" src="https://www.youtube.com/embed/gTO0Qy0LDWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="video-container-desktop">
+          <div class="video-container-desktop scrollFade">
             <iframe width="1908" height="794" src="https://www.youtube.com/embed/gTO0Qy0LDWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
 
-        <section class="faqsPage" id="FAQs">
+        <section class="faqsPage fade-bottom reveal" id="FAQs">
           <div style="margin-right:15%;">
             <h1 style="margin-bottom: 1em;">FAQs</h1>
             <p>No FAQs yet...</p>
