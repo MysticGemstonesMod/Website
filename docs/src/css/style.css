@@ -115,11 +115,16 @@ a:active { text-decoration: none; }
   overflow: hidden;
   background-image: url("../image/ScrNew1.png");
   background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+min-height: 150px;
 }
 .hero_container_transition {
   height: 100px;
-  background: linear-gradient(0deg, rgba(13,3,53,1) 0%, rgba(13, 3, 53, 0) 100%);
-  margin-top: 98vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(13,3,53,1) 0%, rgba(13,3,53,1) 38%, rgba(13,3,53,0.8645658947172619) 59%, rgba(13,3,53,0.5452381636248249) 79%, rgba(13,3,53,0) 100%);
+  position: absolute;
+  bottom: -30px;
 }
 .title {
   text-align: center;
