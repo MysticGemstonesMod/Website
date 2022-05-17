@@ -42,6 +42,14 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; color: gray;}
 a:active { text-decoration: none; }
 
+th, td {
+  border: 1px solid whitesmoke;
+  padding: 0px 20px;
+}
+
+table {
+  min-width: 100%;
+}
 
 /* In development window */
 .inDevelopment {
@@ -111,21 +119,15 @@ a:active { text-decoration: none; }
 
 /* Main Page */
 .hero_container {
-  height: 108vh;
+  height: 100vh;
   overflow: hidden;
   background-image: url("../image/ScrNew1.png");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-min-height: 150px;
+  min-height: 150px;
 }
-.hero_container_transition {
-  height: 100px;
-  width: 100%;
-  background: linear-gradient(0deg, rgba(13,3,53,1) 0%, rgba(13,3,53,1) 38%, rgba(13,3,53,0.8645658947172619) 59%, rgba(13,3,53,0.5452381636248249) 79%, rgba(13,3,53,0) 100%);
-  position: absolute;
-  bottom: -30px;
-}
+
 .title {
   text-align: center;
   position: absolute;
@@ -142,12 +144,25 @@ min-height: 150px;
   padding-left: 30px;
 }
 
+/* secondImage */
+.secondImage {
+  height: 80vh;
+  overflow: hidden;
+  background-image: url("../image/ScrNew3.png");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 150px;
+  width: 100vw;
+}
+
+
 /* About Page */
 .aboutPage {
   display: flex;
   align-items: center;
   padding-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* News Page */
@@ -191,8 +206,29 @@ min-height: 150px;
 
 /* FAQs */
 .faqsPage {
-    padding-top: 150px;
-    margin-bottom: 100px;
+    background-color: #090017;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/starstone_ore.png");
+    image-rendering: pixelated;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tableDiv {
+  width: 100%;
+}
+
+.tableQuestion img {
+  height: 40px;
+}
+
+.tableQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Footer */
@@ -270,7 +306,7 @@ footer {
     font-size: 1.5em;
   }
   footer {
-    margin-top: 350px;
+    margin-top: 250px;
   }
   .video-mobile {
     display: flex;
@@ -301,9 +337,12 @@ footer {
     padding-left: 18%;
     padding-right: 18%;
   }
+  .secondImage {
+    background-image: url("../image/Scr6.png");
+  }
   .aboutPage {
-    margin-bottom: 350px;
-    padding-top: 250px;
+    margin-bottom: 250px;
+    padding-top: 200px;
   }
   .video {
     margin-left: 5em;
@@ -321,8 +360,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 300px;
-    padding-top: 150px;
+    margin-bottom: 250px;
+    padding-top: 200px;
   }
   .newsText {
     margin-right: 10%;
@@ -332,7 +371,7 @@ footer {
   }
   .video-container-desktop {
     display: block;
-    width: 120%;
+    width: 50%;
     margin-top: 0px;
     padding-bottom: 30%;
   }
