@@ -1,14 +1,35 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>DEV - Mystiic Gemstones</Title>
+    <link rel="icon" type="image/x-icon" href="images/iconTransparent.png">
 
-<html>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 
-    <head>
-        <title></title>
-    </head>
+    <!-- ZeroMD -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 
-    <body>
-        <h1>News</h1>
-        <a href="index.html">Home</a>
-    </body>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <br>
+    <h1>News</h1>
+    <a href="./index.html">Go back</a>
+    <br><br>
+    <zero-md src="news/news-2.md">
+        <template>
+            <link rel="stylesheet" href="css/markdown-style.css" />
+        </template>
+    </zero-md>
+    <zero-md src="news/news-1.md">
+        <template>
+            <link rel="stylesheet" href="css/markdown-style.css" />
+        </template>
+    </zero-md>
+</body>
 </html>

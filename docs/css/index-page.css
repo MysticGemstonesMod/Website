@@ -1,0 +1,115 @@
+html {
+    background-color: rgb(25, 24, 41);
+    color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: whitesmoke;
+}
+
+a { 
+    color: whitesmoke; 
+    text-decoration: underline;
+}
+a:hover { color: gray;}
+
+
+/* Main page --------------------------------------------------------- */
+.hero {
+    height: 100vh;
+    background-image: url("../images/ScrNew1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    font-family: Mystery Quest;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 0.9rem;
+}
+
+
+/* Content --------------------------------------------------------- */
+.content-block {
+    padding: 90px 0px 150px 0px;
+    display: grid;
+    place-items: center center;
+}
+
+.content {
+    margin: 0px 20px;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Images --------------------------------------------------------- */
+.image-1 {
+    height: 80vh;
+    background-image: url("../images/ScrNew3.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image-2 {
+    height: 80vh;
+    background-image: url("../images/ScrNew3.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Faqs --------------------------------------------------------- */
+.faqs li {
+    border: 1px white solid; 
+    padding: 6px;
+}
+
+.faqs a {
+    color: whitesmoke; 
+    text-decoration: none;
+}
+
+.uk-accordion-title::before {
+    background-image: url(../images/plus.svg);
+    background-size: 45%;
+}
+
+.uk-open > .uk-accordion-title::before {
+    background-image: url("../images/minus.svg");
+  }
+/* Hover */
+.uk-accordion-title:hover {
+    color: rgb(173, 173, 173);
+}
+
+
+/* Footer --------------------------------------------------------- */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover { 
+    text-decoration: none;    
+}
+
+.github-pages-logo:hover {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(20%);
+}
+
+.footer-container {
+    width: 100%;
+}

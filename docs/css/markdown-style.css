@@ -1,0 +1,16 @@
+.markdown-body {
+    background-color: rgb(21, 19, 32);
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+/* links */
+a { 
+    color: whitesmoke; 
+    text-decoration: underline;
+}
+a:hover { color: gray;}
+
+p, h1, h2, h3 {
+    margin: 15px 15px;
+}

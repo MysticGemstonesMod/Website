@@ -1,149 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mystic Gemstones</title>
-        <link rel="icon" href="src/image/iconTransparent.png">
-        <link rel="stylesheet" href="src/css/normalize.css">
-        <link rel="stylesheet" href="src/css/style.css">
-        <link rel="stylesheet" href="src/slick/slick.css">
-        <link rel="stylesheet" href="src/css/hamburger.css">
+
+        <Title>Mystiic Gemstones</Title>
+        <link rel="icon" type="image/x-icon" href="images/iconTransparent.png">
+
+        <!-- ZeroMD -->
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
+
+        <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="src/js/fadeEffect.js"></script>
-        <script src="src/js/reveal.js"></script>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Mystery Quest' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Seaweed Script' rel='stylesheet'>
+
+        <!-- JS -->
+        <script src="fadeEffect.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index-page.css">
+        <link rel="stylesheet" href="css/nav-bar.css">
+        <link rel="stylesheet" href="css/desktop.css">
+
     </head>
 
     <body>
-
-      <div class="inDevelopment">
-        <p><b>[!]<br>Website in development</b></p>
-      </div>
-
-      <nav class="navBar">
-        <div class="navBarContainer">
-          <div class="navBarLeft">
-            <a href="#mainPage" style="display: flex; align-items: center;"><img src="src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a>
-            <a href="#AboutPage">About</a>
-            <a href="#NewsPage">News</a>
-            <a href="#FAQs">FAQs</a>
-            <a href="wiki/wiki.html">Wiki</a>
-            <a href="https://github.com/MysticGemstonesMod">GitHub</a>
-          </div>
-          <div class="navBarRight">
-            <a href="https://www.curseforge.com/minecraft/mc-mods/mystic-gemstones" class="DownloadButton"><b>Download</b></a>
-            <div class="hamburgerMenu">
-              <div class="burgerContainer">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                  <span class="line line1"></span>
-                  <span class="line line2"></span>
-                  <span class="line line3"></span>
+        <!-- Navbar -->
+        <nav class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <a href="#mainPage"><b>Mystic Gemstones</b></a>
                 </div>
-                <div class="menu-items">
-                  <ul>
-                    <li><a href="#mainPage" style="display: flex; align-items: center;"><img src="src/image/iconTransparent.png" height="32px;"><b>MysticGemstones</b></a></li>
-                    <li><a href="#AboutPage">About</a></li>
-                    <li><a href="#NewsPage">News</a></li>
-                    <li><a href="#FAQs">FAQs</a></li>
-                    <li><a href="wiki/wiki.html">Wiki</a></li>
-                    <li><a href="https://github.com/MysticGemstonesMod">GitHub</a></li>
-                    <li style="margin-top: 24px"><a href="https://www.curseforge.com/minecraft/mc-mods/mystic-gemstones"><b>Download</b></a></li>
-                  </ul>
+                <!-- Mobile menu -->
+                <div class="navbar-right uk-hidden@m">
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default" type="button" style="color: whitesmoke; z-index: 999;">Menu</button>
+                        <div uk-dropdown="animation: slide-right; animate-out: true; duration: 700">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header"><a href="#mainPage" style="color: rgb(76, 0, 218);"><b>Mystic Gemstones</b></a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#newsPage">News</a></li>
+                                <li><a href="#aboutPage">About</a></li>
+                                <li><a href="#faqsPage">FAQs</a></li>
+                                <li><a href="wiki.html">Wiki</a></li>
+                                <li><a href="https://github.com/MysticGemstonesMod">GitHub</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="https://www.curseforge.com/minecraft/mc-mods/mystic-gemstones"><span uk-icon="download"></span><b>DOWNLOAD</b></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- Desktop menu -->
+                <div class="navbar-right uk-visible@m desktop-nav-menu">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#newsPage">News</a></li>
+                        <li><a href="#aboutPage">About</a></li>
+                        <li><a href="#faqsPage">FAQs</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="https://github.com/MysticGemstonesMod">GitHub</a></li>
+                        <li><a href="https://www.curseforge.com/minecraft/mc-mods/mystic-gemstones"><span uk-icon="download"></span><b>DOWNLOAD</b></a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>   
+        <!-- /Navbar ---------------------------------------------------------------------------------------------------------->
 
-      <div class="hero_container" id="mainPage">
-        <div class="title">
-          <div class="scrollFade">
-            <img class="icon2" src="src/image/iconTransparent.png" style="margin-right: 20px;">
-          </div>
-          <div class="scrollFade">
-            <h1><b>Mystic Gemstones</b></h1>
-            <p>"This is supposed to be an inspiring quote..."</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="pageContainer">
-
-        <section class="aboutPage fade-bottom reveal" id="AboutPage">
-          <div class="aboutPageText scrollFade">
-            <h1 style="margin-bottom: 1em;">About</h1>
-            <p>
-              This is our first minecraft mod and it is currently in development.<br>
-              In the future We'll be adding a lot of new ores, tools etc.<br>
-              The mod is currently in alpha phase so it doesn't add much, hopefully there'll eventually be many new items with interesting magical powers.<br>
-            </p>
-          </div>
-          <div class="icon scrollFade" style="height:15em;">
-            <img src="src/image/iconTransparent.png" height="100%">
-          </div>
+        <!-- Main page -->
+        <section class="hero" id="mainPage">
+            <div class="content">
+                <div>
+                    <h1 class="scrollFade">Mystic Gemstones</h1>
+                    <p class="scrollFade"><b>"This was suposed to be an inspiring quote..."</b></p>
+                </div>
+            </div>        
         </section>
+        <!-- /Main page ---------------------------------------------------------------------------------------------------------->
 
-      </div>
-
-        <section class="secondImage"></section>
-
-      <div class="pageContainer">
-
-        <section class="newsPage fade-bottom reveal" id="NewsPage">
-          <div class="newsText scrollFade">
-            <h1 style="margin-bottom: 1em;">News</h1>
-            <div class="newsJustText" style="margin-bottom: 1.5em;">
-              <h3>First release! 0.1-Alpha</h3>
-              <p>Finaly after seven months of development first playable alpha version has been released.</p>
-              <br>
-              <p>You can download it <a href="https://www.curseforge.com/minecraft/mc-mods/mystic-gemstones" style="text-decoration: underline; padding: 0px;">here</a>.</p>
+        <!-- News page -->        
+        <section class="news content-block" id="newsPage">
+            <div class="content">
+                <div>
+                    <h1 class="scrollFade">News</h1>
+                    <zero-md src="news/news-2.md" class="scrollFade" style="z-index: -1;">
+                        <template>
+                            <link rel="stylesheet" href="css/markdown-style.css" />
+                        </template>
+                    </zero-md>
+                    <a href="news.html" class="scrollFade">All posts</a>
+                </div>
             </div>
-            <a href="news.html" style="border: 2px solid whitesmoke;">Read more</a>
-          </div>
-          <div class="video-mobile scrollFade">
-            <div class="video-container">
-              <iframe width="1908" height="794" src="https://www.youtube.com/embed/gTO0Qy0LDWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="video-container-desktop scrollFade">
-            <iframe width="1908" height="794" src="https://www.youtube.com/embed/gTO0Qy0LDWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        </section>       
+        <!-- /News page ---------------------------------------------------------------------------------------------------------->
+
+        <section class="image-1"></section>
+
+        <!-- About page -->
+        <section class="about content-block" id="aboutPage">
+            <div class="content">
+                <div class="uk-width-2-3@s">
+                    <h1 class="scrollFade">About</h1>
+                    <br>
+                    <p class="scrollFade">Gems, magic and a lot more? MysticGemstones has got it all.</p><br>
+                    <p class="scrollFade">Most important are gems which you can use to create magic items like rings or charms.
+                        and from each you get different effects like water breathing or night vision...</p><br>
+                    <p class="scrollFade">Visit <a href="showcase.html">Showcase page</a> to learn more.</p>
+                </div>
+                <div>
+                    <img src="images/iconTransparent.png" style="width: 250px;" class="uk-visible@s">
+                </div>
+            </div>  
         </section>
+        <!-- /About page ---------------------------------------------------------------------------------------------------------->
 
-      </div>
+       <section class="image-2"></section>
 
-      <section class="faqsPage pageContainer" id="FAQs" style="height: 65vh;">
-        <div class="fade-bottom reveal tableDiv">
-          <h1>Frequently Asked Questions</h1>
-          <p style="margin-bottom: 30px;">Answers to common questions. Can't find the answer you're looking for? Check out the <a href="wiki/wiki.html" style="padding: 0; text-decoration: underline;">wiki</a>.</p>
-          <table>
-           <tr>
-             <td><div class="tableQuestion">
-               <p>Question 1</p>
-               <img src="src/image/arrow.png">
-             </div></td>
-           </tr>
-           <tr>
-             <td><div class="tableQuestion">
-               <p>Question 2</p>
-               <img src="src/image/arrow.png">
-             </div></td>
-           </tr>
-           <tr>
-             <td><div class="tableQuestion">
-               <p>Question 3</p>
-               <img src="src/image/arrow.png">
-             </div></td>
-           </tr>
-         </table>
-        </div>
-      </section>
+       <!-- FAQs page -->
+        <section class="faqs content-block" id="faqsPage">
+            <div class="content">
+                <div style="max-width: 900px;">                
+                    <h1 class="scrollFade">FAQs</h1>
+                    <p class="scrollFade">Answers to common questions. Can't find the answer you're looking for? Check out the <a href="wiki.html">wiki</a>.</p>
+                    <br>
+                    <ul uk-accordion>
+                        <li  class="scrollFade">
+                            <a class="uk-accordion-title" href="#">Version?</a>
+                            <div class="uk-accordion-content">
+                                <p>Mystic Gemstones is currently only avalibale for Minecraft 1.18 but I will be updating it to newer versions.
+                                    <br>Regarding mod version it is currently in ALPHA but it is close to beeing released as full 1.0 release.
+                                </p>
+                            </div>
+                        </li>
+                        <li  class="scrollFade">
+                            <a class="uk-accordion-title" href="#">Forge / Fabric?</a>
+                            <div class="uk-accordion-content">
+                                <p>At this point I am only developing mod for Fabric but when I 'finish' it; release 1.0, I will start forge development.</p>
+                            </div>
+                        </li>
+                        <li  class="scrollFade">
+                            <a class="uk-accordion-title" href="#">What is this?</a>
+                            <div class="uk-accordion-content">
+                                <p>I have no idea dude.</p>
+                            </div>
+                        </li>
+                    </ul></div>
+            </div>
+        </section>
+        <!-- /FAQs page ---------------------------------------------------------------------------------------------------------->
 
-      <footer>
-          <p>MysticGemstones Mod</p>
-      </footer>
-
+        <!-- Footer -->
+        <footer style="padding: 40px 0px;" class="content-block">
+            <div style="margin: 0px 20px; max-width: 1100px; width: 70%;">
+                <div>
+                    <div class="footer-container">
+                        <div>
+                            <p>Mystic Gemstones... adding gems to minecraft since 2021 :)</p><br>
+                            <h2></h2>
+                            <a href="#mainPage"><img src="images/iconTransparent.png" style="width: 38px;" class="uk-margin-small-right" alt=""></a>
+                            <a href="https://github.com/MysticGemstonesMod"><span class="uk-margin-small-right" uk-icon="icon: github; ratio: 1.4;"></span></a>
+                            <a href=""><span class="uk-margin-small-right" uk-icon="icon: discord; ratio: 1.4;"></span></a>
+                            <a href=""><span class="uk-margin-small-right" uk-icon="icon: rss; ratio: 1.4;"></span></a>
+                            <a href=""><span class="uk-margin-small-right" uk-icon="icon: youtube; ratio: 1.4;"></span></a>
+                        </div>
+                        <div style="width: 0vw;"></div>      
+                        <div class="uk-margin-large-top uk-hidden@l"></div>
+                        <div>
+                            <h5>Proudly hosted  by</h5>
+                            <a href="https://pages.github.com/" class="github-pages-logo"><img src="images/githubPagesLogo.svg" alt=""></a>
+                            <h5 class="uk-margin-small-top">And made using</h5>
+                            <div style="display:inline-flex; justify-content: center; align-items: center;">
+                                <a href="https://zerodevx.github.io/zero-md/" style="padding-right: 5px; font-family:'Seaweed Script',sans-serif; font-size: 2em;">&lt;zero-md&gt;</a>
+                                <h1 style="display: inline; padding: 0px 10px;">/</h1>
+                                <a href="https://getuikit.com/">UIkit
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34" class="uk-svg">
+                                <polygon points="19.1 4.1 13.75 1 8.17 4.45 13.6 7.44 19.1 4.1" fill="#fff"></polygon>
+                                <path d="M21.67,5.43,16.14,8.77,22.4,12.4v9.52l-8.44,4.76L5.6,21.93V14.55L0,11.7V25.21l13.75,8.08L28,25.21V9.07Z"></path>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="uk-margin-large-top">© Copyright 2021-2022, <b>Mystic Gemstones</b>.</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

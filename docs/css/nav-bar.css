@@ -1,0 +1,28 @@
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+}
+
+.desktop-nav-menu a {
+    color: whitesmoke !important; 
+}
+
+.desktop-nav-menu a:hover {
+    color: gray !important; 
+}

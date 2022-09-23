@@ -1,0 +1,37 @@
+@media only screen and (min-width: 600px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero {
+        background-image: url("../images/Scr3.png");
+    }
+
+    .image-1 {
+        background-image: url("../images/Scr5.png");
+    }
+
+    .image-2 {
+        background-image: url("../images/Scr6.png");
+    }
+
+    .content-block {
+        padding: 180px 0px 180px 0px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
