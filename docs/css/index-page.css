@@ -13,6 +13,24 @@ a {
 }
 a:hover { color: gray;}
 
+.brake-line {
+    height: 6px; 
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgb(166, 0, 255) 40%, rgba(9,9,121,1) 60%, rgba(2,0,36,1) 80%);*/
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgb(166, 0, 255) 50%, rgba(9,9,121,1) 70%, rgba(2,0,36,1) 100%);*/
+    /*background: linear-gradient(90deg, rgb(26, 45, 45) 0%, rgba(47,79,79,1) 40%, rgba(47,79,79,1) 70%, rgb(29, 49, 49) 100%);*/
+    background-color:darkslategray;
+    background-image: url(../images/brakeline-1.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.brake-line-footer {
+    height: 5px; 
+    background: linear-gradient(90deg, rgba(20,201,155,255) 0%, rgba(24,50,111,255) 45%, rgba(24,50,111,255) 55%, rgba(175,40,25,255) 100%);
+}
+
 
 /* Main page --------------------------------------------------------- */
 .hero {
@@ -53,18 +71,18 @@ a:hover { color: gray;}
 }
 
 /* Images --------------------------------------------------------- */
-.image-1 {
-    height: 80vh;
-    background-image: url("../images/ScrNew3.png");
+.image {
+    height: 70vh;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.image-2 {
-    height: 80vh;
+.image-1 {
     background-image: url("../images/ScrNew3.png");
-    background-size: cover;
-    background-attachment: fixed;
+}
+
+.image-2 {
+    background-image: url("../images/ScrNew3.png");
 }
 
 /* Faqs --------------------------------------------------------- */
@@ -96,6 +114,8 @@ a:hover { color: gray;}
 footer {
     text-align: center;
     font-size: 0.85em;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding-top: 75px !important;
 }
 
 footer a {
