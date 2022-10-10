@@ -1,6 +1,6 @@
-## First release! 0.1-Alpha
+# First release! 0.1-Alpha
 
-09.10.2022.
+[ 13.05.2022 ]
 
 <br>
 

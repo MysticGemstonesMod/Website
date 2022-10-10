@@ -24,6 +24,9 @@
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Mystery Quest' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Seaweed Script' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+        <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 
         <!-- JS -->
         <script src="fadeEffect.js"></script>
@@ -41,12 +44,15 @@
         <nav class="navbar-container">
             <div class="navbar">
                 <div class="navbar-left">
-                    <a href="#mainPage"><b>Mystic Gemstones</b></a>
+                    <div>
+                        <img src="images/iconTransparent.png" style="height: 32px;" alt="">
+                        <a href="#mainPage"><b>Mystic Gemstones</b></a>
+                    </div>    
                 </div>
                 <!-- Mobile menu -->
                 <div class="navbar-right uk-hidden@m">
                     <div class="uk-inline">
-                        <button class="uk-button uk-button-default" type="button" style="color: whitesmoke; z-index: 999;">Menu</button>
+                        <button class="uk-button uk-button-default" type="button" style="color: whitesmoke; z-index: 999; border: none; padding: 0px;"><a href=""><span uk-icon="icon: menu; ratio: 2"></span></a></button>
                         <div uk-dropdown="animation: slide-right; animate-out: true; duration: 700">
                             <ul class="uk-nav uk-dropdown-nav">
                                 <li class="uk-nav-header"><a href="#mainPage" style="color: rgb(76, 0, 218);"><b>Mystic Gemstones</b></a></li>
@@ -94,8 +100,8 @@
         <section class="news content-block" id="newsPage">
             <div class="content">
                 <div>
-                    <h1 class="scrollFade">News</h1>
-                    <zero-md src="news/news-2.md" class="scrollFade" style="z-index: -1;">
+                    <h1 class="scrollFade section-title"><b>NEWS</b></h1>
+                    <zero-md src="news/news-3.md" style="z-index: -1;">
                         <template>
                             <link rel="stylesheet" href="css/markdown-style.css" />
                         </template>
@@ -112,20 +118,20 @@
         <section class="about content-block" id="aboutPage">
             <div class="content">
                 <div class="uk-width-2-3@s">
-                    <h1 class="scrollFade">About</h1>
+                    <h1 class="scrollFade section-title"><b>About</b></h1>
                     <br>
+                    <h3 class="scrollFade" style="font-family: Black Han Sans;">Mystic Gemstones</h3>
                     <p class="scrollFade">Gems, magic and a lot more? MysticGemstones has got it all.</p><br>
                     <p class="scrollFade">Most important are gems which you can use to create magic items like rings or charms.
                         and from each you get different effects like water breathing or night vision...</p><br>
                     <p class="scrollFade">Visit <a href="showcase.html">Showcase page</a> to learn more.</p><br><br><br>
-                    <h3 class="scrollFade">Get involved</h3>
-                    <br>
-                    <p class="scrollFade">If like this mod or just whant to help with development you can submit
+                    <h3 class="scrollFade" style="font-family: Black Han Sans;">Get involved</h3>
+                    <p class="scrollFade">If you like this mod or just whant to help with development you can submit
                         ideas for changes or new features <a href="https://github.com/MysticGemstonesMod/MysticGemstones/discussions">here</a>.   
                     </p>
                 </div>
                 <div>
-                    <img src="images/iconTransparent.png" style="width: 250px;" class="uk-visible@s">
+                    <img src="images/iconTransparent.png" style="width: 250px;" class="uk-visible@s scrollFade">
                 </div>
             </div>  
         </section>
@@ -137,7 +143,7 @@
         <section class="faqs content-block" id="faqsPage">
             <div class="content">
                 <div style="max-width: 900px;">                
-                    <h1 class="scrollFade">FAQs</h1>
+                    <h1 class="scrollFade section-title"><b>FAQs</b></h1>
                     <p class="scrollFade">Answers to common questions. Can't find the answer you're looking for? Check out the <a href="wiki.html">wiki</a>.</p>
                     <br>
                     <ul uk-accordion>
@@ -174,7 +180,8 @@
                 <div>
                     <div class="footer-container">
                         <div>
-                            <p>Mystic Gemstones... adding gems to minecraft since 2021 :)</p><br>
+                            <h2 class="scrollFade" style="font-family: Mystery Quest;">Mystic Gemstones</h5>
+                            <p>Adding gems to minecraft since 2021 :)</p><br>
                             <h2></h2>
                             <a href="#mainPage"><img src="images/iconTransparent.png" style="width: 38px;" class="uk-margin-small-right" alt=""></a>
                             <a href="https://github.com/MysticGemstonesMod"><span class="uk-margin-small-right" uk-icon="icon: github; ratio: 1.4;"></span></a>
@@ -191,12 +198,12 @@
                             <div style="display:inline-flex; justify-content: center; align-items: center;">
                                 <a href="https://zerodevx.github.io/zero-md/" style="padding-right: 5px; font-family:'Seaweed Script',sans-serif; font-size: 2em;">&lt;zero-md&gt;</a>
                                 <h1 style="display: inline; padding: 0px 10px;">/</h1>
-                                <a href="https://getuikit.com/">UIkit
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34" class="uk-svg">
+                                <a href="https://getuikit.com/" style="font-family: Roboto; font-size: 1.4em; display: flex; justify-content: center; align-items: center;"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 28 34" class="uk-svg">
                                 <polygon points="19.1 4.1 13.75 1 8.17 4.45 13.6 7.44 19.1 4.1" fill="#fff"></polygon>
                                 <path d="M21.67,5.43,16.14,8.77,22.4,12.4v9.52l-8.44,4.76L5.6,21.93V14.55L0,11.7V25.21l13.75,8.08L28,25.21V9.07Z"></path>
                                 </svg>
-                                </a>
+                                <span>&nbsp;&nbsp;UIkit</span></a>
                             </div>
                         </div>
                     </div>
