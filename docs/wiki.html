@@ -15,15 +15,37 @@
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index-page.css">
+        <link rel="stylesheet" href="css/wiki.css">
     </head>
     
     <body>
-        <div style="display: grid; place-items: center center; height: 95vh;">
-            <div style="text-align: center;">
-                <h1 class="uk-margin-bottom">[!] Wiki not finished yet [!]</h1>
-                <a style="text-decoration: none;" href="index.html">Go back.</a>
+        <div class="wiki-container" uk-grid>
+            <div class="uk-width-auto@m">
+                <div style="display: flex;">
+                    <ul class="ul-class">
+                        <li><h6>INTRODUCTION</h6></li>
+                        <li class="url"><a href="wiki/geting_started.html" target="targetframe">Getting Started</a></li>
+                        <li><h6>GEMS</h6></li>
+                        <li class="url"><a href="wiki/aquamarine.html" target="targetframe">Aquamarine</a></li>
+                        <li class="url"><a href="wiki/jasper.html" target="targetframe">Jasper</a></li>
+                        <li class="url"><a href="wiki/alexandrite.html" target="targetframe">Alexandrite</a></li>
+                        <li class="url"><a href="wiki/malachite.html" target="targetframe">Malachite</a></li>
+                        <li class="url"><a href="wiki/topaz.html" target="targetframe">Topaz</a></li>
+                        <li class="url"><a href="wiki/starstone.html" target="targetframe">Starstone</a></li>
+                        <li><h6>BLOCKS</h5></li>
+                        <li class="url"><a href="gem_grindstone.html" target="targetframe">Gem Grindstone</a></li>
+                        <li class="url"><a href="gem_infuser.html" target="targetframe">Gem Infuser</a></li>
+                        <li class="url"><a href="gem_craftstation.html" target="targetframe">Gem CraftStation</a></li>
+                    </ul>
+                    <span uk-height-match=".ul-class">
+                        <hr class="uk-divider-vertical" style="width: 10px; margin-top: 30px; height: 95%;">
+                    </span>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                <iframe style="width: 100%; height: 100vh; margin-top: 40px;" src="wiki/geting_started.html" name="targetframe" allowTransparency="true" 
+                scrolling="no" frameborder="0" class="iframe-element" id="Iframe">
+                Your Browser Does Not Support iframes!</iframe>
             </div>
         </div>    
     </body>
